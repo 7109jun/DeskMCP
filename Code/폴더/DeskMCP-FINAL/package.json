@@ -1,0 +1,12 @@
+{
+  "name": "deskmcp",
+  "version": "5.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node dist/server.js",
+    "test": "npm run build && node tests/smoke.mjs"
+  },
+  "description": "DeskMCP: JavaScript MCP virtual AI desktop with persistent workspaces, memory, virtual filesystem, WebAssembly, browser automation, HTTPS networking, and server-side persistence."
+}

@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DeskMCP</title><link rel="stylesheet" href="/style.css"></head><body>
+<header class="bar"><div class="brand">DeskMCP <span>Virtual AI Desktop</span></div><div id="status" class="status">connecting…</div><button id="newWorkspace">New</button><button id="save">Save</button><button id="export">Export</button><label class="import">Import<input id="import" type="file" accept="application/json"></label></header>
+<div class="shell">
+  <aside class="sidebar">
+    <section><h3>WORKSPACE</h3><div id="workspaceName" class="workspace-name"></div></section>
+    <section><h3>FILES</h3><div id="files" class="list"></div></section>
+    <section><h3>AI MEMORY</h3><div id="memory" class="list"></div></section>
+    <section><h3>PROJECT</h3><pre id="settings" class="mini"></pre></section>
+  </aside>
+  <main class="main">
+    <div id="desktop" class="desktop"><div id="taskbar" class="taskbar"><button id="start">Desk</button><button id="browser">Web</button><div id="tasks"></div><span id="clock"></span></div></div>
+    <div class="io"><div class="io-title">MCP / Browser Bridge</div><div id="log" class="log"></div><div class="cmdrow"><span>›</span><input id="cmd" placeholder="desksh command, e.g. help / open terminal / ls / cat README.txt"><button id="runCmd">Run</button></div></div>
+  </main>
+</div>
+<script type="module" src="/app.js"></script></body></html>
